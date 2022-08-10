@@ -18,6 +18,14 @@ test {
     useJUnitPlatform()
 }
 
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.runtimeClasspath.files.collect{ it.name}.join(' '),
+                'Main-Class': 'com.galvanize.Application'
+        )
+    }
+}
 /*
 task wrapper(type: Wrapper){
     gradleVersion = '7.3.3'
