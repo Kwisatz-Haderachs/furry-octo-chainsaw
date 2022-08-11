@@ -6,6 +6,7 @@ import java.lang.Math;
 public class Application {
     public static void main(String[] args){
         System.out.println("Hello World!");
+
     }
 
     public void ceaser_cipher(){
