@@ -23,7 +23,7 @@ public class Application {
 
 
             } catch (Exception e) {
-                System.out.println("");
+                System.out.println("Error, mixed or invalid input received");
             }
         }
     }
