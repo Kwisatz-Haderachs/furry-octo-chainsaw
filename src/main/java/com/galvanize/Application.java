@@ -12,7 +12,7 @@ public class Application {
             caeserCipher();
         } else {
             try {
-
+                //System.out.println("Try block reached");
                 boolean c = check30(args);
                 if (c == true) System.out.println("The input included the number 30");
                 else System.out.println("The input did not include the number 30");
@@ -27,12 +27,6 @@ public class Application {
             }
         }
     }
-
-    /*
-
-    Bonus challenge for the above prompts (only try this if you complete both): Handle the case where input is provided that cannot be converted to an int.
-    (Hint: you will need some way to “catch” invalid input).
-     */
 
     public static boolean check30(String[] args){
         for (int i = 0; i < args.length; i++) {
